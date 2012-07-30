@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<eMFPatternLanguage:PatternModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:eMFPatternLanguage="http://www.eclipse.org/viatra2/patternlanguage/EMFPatternLanguage" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore">
+  <patterns name="Ainstance" fileName="platform:/resource/query/src/Query.eiq">
+    <bodies>
+      <constraints xsi:type="eMFPatternLanguage:EClassifierConstraint">
+        <type xsi:type="eMFPatternLanguage:ClassType">
+          <classname xsi:type="ecore:EClass" href="../src/Query.eiq#xtextLink_::0.1.0.4.0.1.0.0::1::/2"/>
+        </type>
+        <var var="O"/>
+      </constraints>
+    </bodies>
+  </patterns>
+  <importPackages>
+    <ePackage href="../src/Query.eiq#xtextLink_::0.2.0::0::/2"/>
+  </importPackages>
+</eMFPatternLanguage:PatternModel>

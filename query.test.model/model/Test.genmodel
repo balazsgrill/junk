@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/query.test.model/src"
+    modelPluginID="query.test.model" modelName="Test" importerID="org.eclipse.emf.importer.ecore"
+    copyrightFields="false">
+  <foreignModel>Test.ecore</foreignModel>
+  <genPackages prefix="Package" disposableProviderFactory="true" ecorePackage="Test.ecore#/">
+    <nestedGenPackages prefix="Subpackage" disposableProviderFactory="true" ecorePackage="Test.ecore#//subpackage">
+      <genClasses ecoreClass="Test.ecore#//subpackage/A"/>
+      <genClasses ecoreClass="Test.ecore#//subpackage/B"/>
+      <genClasses ecoreClass="Test.ecore#//subpackage/C"/>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>
