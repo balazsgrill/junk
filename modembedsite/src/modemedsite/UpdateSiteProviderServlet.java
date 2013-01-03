@@ -31,15 +31,21 @@ public class UpdateSiteProviderServlet extends HttpServlet
 			resp.getWriter().println("This is an eclipse update site. Use an eclipse instance to access contents.");
 		}else{
 			InputStream is = getServletContext().getResourceAsStream("data/"+path);
-			try{
-				OutputStream out = resp.getOutputStream();
-				byte[] buffer = new byte[128];
-				while(is.available() > 0){
-					int r = is.read(buffer);
-					out.write(buffer, 0, r);
+			if (is == null){
+				//ERROR 404
+				resp.sendError(404);
+			}else{
+				try{
+					resp.addIntHeader("Content-Length", is.available());
+					OutputStream out = resp.getOutputStream();
+					byte[] buffer = new byte[128];
+					while(is.available() > 0){
+						int r = is.read(buffer);
+						out.write(buffer, 0, r);
+					}
+				}finally{
+					is.close();
 				}
-			}finally{
-				is.close();
 			}
 		}
 

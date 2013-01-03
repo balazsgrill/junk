@@ -11,6 +11,6 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>UpdateSiteProvider</servlet-name>
-    <url-pattern>/site/*</url-pattern>
+    <url-pattern>/*</url-pattern>
   </servlet-mapping>
 </web-app>
