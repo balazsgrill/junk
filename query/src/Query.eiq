@@ -1,5 +1,0 @@
-import "http://Some.package/subpackage"
-
-pattern Ainstance() = {
-	A(O)
-}
