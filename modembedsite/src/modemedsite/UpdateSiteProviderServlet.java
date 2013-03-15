@@ -27,10 +27,12 @@ public class UpdateSiteProviderServlet extends HttpServlet
 			{
 		String path = req.getPathInfo();
 		System.out.println("Requesting "+path);
-		if (path == null){
+		if (path == null || path.equals("") || path.equals("/")){
 			resp.getWriter().println("This is an eclipse update site. Use an eclipse instance to access contents.");
+			
+			
 		}else{
-			InputStream is = getServletContext().getResourceAsStream("data/"+path);
+			InputStream is = getServletContext().getResourceAsStream("/data/"+path);
 			if (is == null){
 				//ERROR 404
 				resp.sendError(404);
