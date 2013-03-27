@@ -28,9 +28,10 @@ public class UpdateSiteProviderServlet extends HttpServlet
 		String path = req.getPathInfo();
 		System.out.println("Requesting "+path);
 		if (path == null || path.equals("") || path.equals("/")){
-			resp.getWriter().println("This is an eclipse update site. Use an eclipse instance to access contents.");
-			
-			
+			resp.getWriter().println("<html><body>");
+			resp.getWriter().println("<p>This is an eclipse update site. Use an eclipse instance to access contents.</p>");
+			resp.getWriter().println("<a href=\"MODembed_updatesite.zip\">Download as a zip archive.</a>");
+			resp.getWriter().println("</body></html>");
 		}else{
 			InputStream is = getServletContext().getResourceAsStream("/data/"+path);
 			if (is == null){

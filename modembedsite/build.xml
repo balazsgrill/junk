@@ -46,6 +46,10 @@
 
     <target name="dist" depends="compile" description="generate the distribution">
         <mkdir dir="${build.dir}" />
+    	<zip destfile="${webapp.dir}/data/MODembed_updatesite.zip">
+    		<zipfileset dir="${webapp.dir}/data">
+    		</zipfileset>
+    	</zip>
         <war destfile="${war.file}" basedir="${webapp.dir}" webxml="${webapp.dir}/WEB-INF/web.xml" />
         
         <zip destfile="${src.file}">            
