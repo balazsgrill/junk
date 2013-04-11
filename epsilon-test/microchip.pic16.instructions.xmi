@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="ASCII"?>
+<instructionset:InstructionSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:instructionset="http://modembed.hu/core/instructionset" xmlns:traceability="http://modembed.hu/infrastructure/traceability" description="Mid-range (PIC16) instruction set&#xA;" name="microchip.pic16.instructions">
+  <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="4"/>
+  <instructions description="" name="ADDWF">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="6"/>
+    <parameters id="102"/>
+    <parameters id="100" defaultValue="1"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="6" value="7"/>
+      <sections xsi:type="instructionset:ParameterSection" start="6" size="1" parameter="//@instructions.0/@parameters.1"/>
+      <sections xsi:type="instructionset:ParameterSection" start="7" size="7" parameter="//@instructions.0/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="ANDWF">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="7"/>
+    <parameters id="102"/>
+    <parameters id="100" defaultValue="1"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="6" value="5"/>
+      <sections xsi:type="instructionset:ParameterSection" start="6" size="1" parameter="//@instructions.1/@parameters.1"/>
+      <sections xsi:type="instructionset:ParameterSection" start="7" size="7" parameter="//@instructions.1/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="CLRF">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="8"/>
+    <parameters id="102"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="7" value="3"/>
+      <sections xsi:type="instructionset:ParameterSection" start="7" size="7" parameter="//@instructions.2/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="CLRW">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="9"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="6" value="1"/>
+      <sections xsi:type="instructionset:ConstantSection" start="6" size="8"/>
+    </words>
+  </instructions>
+  <instructions description="" name="COMF">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="10"/>
+    <parameters id="102"/>
+    <parameters id="100" defaultValue="1"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="6" value="9"/>
+      <sections xsi:type="instructionset:ParameterSection" start="6" size="1" parameter="//@instructions.4/@parameters.1"/>
+      <sections xsi:type="instructionset:ParameterSection" start="7" size="7" parameter="//@instructions.4/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="DECF">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="11"/>
+    <parameters id="102"/>
+    <parameters id="100" defaultValue="1"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="6" value="3"/>
+      <sections xsi:type="instructionset:ParameterSection" start="6" size="1" parameter="//@instructions.5/@parameters.1"/>
+      <sections xsi:type="instructionset:ParameterSection" start="7" size="7" parameter="//@instructions.5/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="DECFSZ">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="12"/>
+    <parameters id="102"/>
+    <parameters id="100" defaultValue="1"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="6" value="11"/>
+      <sections xsi:type="instructionset:ParameterSection" start="6" size="1" parameter="//@instructions.6/@parameters.1"/>
+      <sections xsi:type="instructionset:ParameterSection" start="7" size="7" parameter="//@instructions.6/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="INCF">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="13"/>
+    <parameters id="102"/>
+    <parameters id="100" defaultValue="1"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="6" value="10"/>
+      <sections xsi:type="instructionset:ParameterSection" start="6" size="1" parameter="//@instructions.7/@parameters.1"/>
+      <sections xsi:type="instructionset:ParameterSection" start="7" size="7" parameter="//@instructions.7/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="INCFSZ">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="14"/>
+    <parameters id="102"/>
+    <parameters id="100" defaultValue="1"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="6" value="15"/>
+      <sections xsi:type="instructionset:ParameterSection" start="6" size="1" parameter="//@instructions.8/@parameters.1"/>
+      <sections xsi:type="instructionset:ParameterSection" start="7" size="7" parameter="//@instructions.8/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="IORWF">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="15"/>
+    <parameters id="102"/>
+    <parameters id="100" defaultValue="1"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="6" value="4"/>
+      <sections xsi:type="instructionset:ParameterSection" start="6" size="1" parameter="//@instructions.9/@parameters.1"/>
+      <sections xsi:type="instructionset:ParameterSection" start="7" size="7" parameter="//@instructions.9/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="MOVF">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="16"/>
+    <parameters id="102"/>
+    <parameters id="100" defaultValue="1"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="6" value="8"/>
+      <sections xsi:type="instructionset:ParameterSection" start="6" size="1" parameter="//@instructions.10/@parameters.1"/>
+      <sections xsi:type="instructionset:ParameterSection" start="7" size="7" parameter="//@instructions.10/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="MOVWF">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="17"/>
+    <parameters id="102"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="6"/>
+      <sections xsi:type="instructionset:ConstantSection" start="6" size="1" value="1"/>
+      <sections xsi:type="instructionset:ParameterSection" start="7" size="7" parameter="//@instructions.11/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="NOP">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="18"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="14"/>
+    </words>
+  </instructions>
+  <instructions description="" name="RLF">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="19"/>
+    <parameters id="102"/>
+    <parameters id="100" defaultValue="1"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="6" value="13"/>
+      <sections xsi:type="instructionset:ParameterSection" start="6" size="1" parameter="//@instructions.13/@parameters.1"/>
+      <sections xsi:type="instructionset:ParameterSection" start="7" size="7" parameter="//@instructions.13/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="RRF">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="20"/>
+    <parameters id="102"/>
+    <parameters id="100" defaultValue="1"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="6" value="12"/>
+      <sections xsi:type="instructionset:ParameterSection" start="6" size="1" parameter="//@instructions.14/@parameters.1"/>
+      <sections xsi:type="instructionset:ParameterSection" start="7" size="7" parameter="//@instructions.14/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="SUBWF">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="21"/>
+    <parameters id="102"/>
+    <parameters id="100" defaultValue="1"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="6" value="2"/>
+      <sections xsi:type="instructionset:ParameterSection" start="6" size="1" parameter="//@instructions.15/@parameters.1"/>
+      <sections xsi:type="instructionset:ParameterSection" start="7" size="7" parameter="//@instructions.15/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="SWAPF">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="22"/>
+    <parameters id="102"/>
+    <parameters id="100" defaultValue="1"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="6" value="14"/>
+      <sections xsi:type="instructionset:ParameterSection" start="6" size="1" parameter="//@instructions.16/@parameters.1"/>
+      <sections xsi:type="instructionset:ParameterSection" start="7" size="7" parameter="//@instructions.16/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="XORWF">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="23"/>
+    <parameters id="102"/>
+    <parameters id="100" defaultValue="1"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="6" value="6"/>
+      <sections xsi:type="instructionset:ParameterSection" start="6" size="1" parameter="//@instructions.17/@parameters.1"/>
+      <sections xsi:type="instructionset:ParameterSection" start="7" size="7" parameter="//@instructions.17/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="BCF">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="24"/>
+    <parameters id="102"/>
+    <parameters id="98"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="2" value="1"/>
+      <sections xsi:type="instructionset:ConstantSection" start="2" size="2"/>
+      <sections xsi:type="instructionset:ParameterSection" start="4" size="3" parameter="//@instructions.18/@parameters.1"/>
+      <sections xsi:type="instructionset:ParameterSection" start="7" size="7" parameter="//@instructions.18/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="BSF">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="25"/>
+    <parameters id="102"/>
+    <parameters id="98"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="2" value="1"/>
+      <sections xsi:type="instructionset:ConstantSection" start="2" size="2" value="1"/>
+      <sections xsi:type="instructionset:ParameterSection" start="4" size="3" parameter="//@instructions.19/@parameters.1"/>
+      <sections xsi:type="instructionset:ParameterSection" start="7" size="7" parameter="//@instructions.19/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="BTFSC">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="26"/>
+    <parameters id="102"/>
+    <parameters id="98"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="2" value="1"/>
+      <sections xsi:type="instructionset:ConstantSection" start="2" size="2" value="2"/>
+      <sections xsi:type="instructionset:ParameterSection" start="4" size="3" parameter="//@instructions.20/@parameters.1"/>
+      <sections xsi:type="instructionset:ParameterSection" start="7" size="7" parameter="//@instructions.20/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="BTFSS">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="27"/>
+    <parameters id="102"/>
+    <parameters id="98"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="2" value="1"/>
+      <sections xsi:type="instructionset:ConstantSection" start="2" size="2" value="3"/>
+      <sections xsi:type="instructionset:ParameterSection" start="4" size="3" parameter="//@instructions.21/@parameters.1"/>
+      <sections xsi:type="instructionset:ParameterSection" start="7" size="7" parameter="//@instructions.21/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="ADDLW">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="28"/>
+    <parameters id="107"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="2" value="3"/>
+      <sections xsi:type="instructionset:ConstantSection" start="2" size="4" value="14"/>
+      <sections xsi:type="instructionset:ParameterSection" start="6" size="8" parameter="//@instructions.22/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="ANDLW">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="29"/>
+    <parameters id="107"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="2" value="3"/>
+      <sections xsi:type="instructionset:ConstantSection" start="2" size="4" value="9"/>
+      <sections xsi:type="instructionset:ParameterSection" start="6" size="8" parameter="//@instructions.23/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="IORLW">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="30"/>
+    <parameters id="107"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="2" value="3"/>
+      <sections xsi:type="instructionset:ConstantSection" start="2" size="4" value="8"/>
+      <sections xsi:type="instructionset:ParameterSection" start="6" size="8" parameter="//@instructions.24/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="MOVLW">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="31"/>
+    <parameters id="107"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="2" value="3"/>
+      <sections xsi:type="instructionset:ConstantSection" start="2" size="4"/>
+      <sections xsi:type="instructionset:ParameterSection" start="6" size="8" parameter="//@instructions.25/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="RETLW">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="32"/>
+    <parameters id="107"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="2" value="3"/>
+      <sections xsi:type="instructionset:ConstantSection" start="2" size="4" value="4"/>
+      <sections xsi:type="instructionset:ParameterSection" start="6" size="8" parameter="//@instructions.26/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="SUBLW">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="33"/>
+    <parameters id="107"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="2" value="3"/>
+      <sections xsi:type="instructionset:ConstantSection" start="2" size="4" value="12"/>
+      <sections xsi:type="instructionset:ParameterSection" start="6" size="8" parameter="//@instructions.27/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="XORLW">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="34"/>
+    <parameters id="107"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="2" value="3"/>
+      <sections xsi:type="instructionset:ConstantSection" start="2" size="4" value="10"/>
+      <sections xsi:type="instructionset:ParameterSection" start="6" size="8" parameter="//@instructions.28/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="CALL">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="35"/>
+    <parameters id="107"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="3" value="4"/>
+      <sections xsi:type="instructionset:ParameterSection" start="3" size="11" parameter="//@instructions.29/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="GOTO">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="36"/>
+    <parameters id="107"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="3" value="5"/>
+      <sections xsi:type="instructionset:ParameterSection" start="3" size="11" parameter="//@instructions.30/@parameters.0"/>
+    </words>
+  </instructions>
+  <instructions description="" name="CLRWDT">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="37"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="14" value="100"/>
+    </words>
+  </instructions>
+  <instructions description="" name="RETFIE">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="38"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="14" value="9"/>
+    </words>
+  </instructions>
+  <instructions description="" name="RETURN">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="39"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="14" value="8"/>
+    </words>
+  </instructions>
+  <instructions description="" name="SLEEP">
+    <origins xsi:type="traceability:TextOrigin" fileName="/microchip.pic16/pic16.e" line="40"/>
+    <words>
+      <sections xsi:type="instructionset:ConstantSection" size="14" value="99"/>
+    </words>
+  </instructions>
+</instructionset:InstructionSet>

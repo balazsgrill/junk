@@ -1,0 +1,36 @@
+rule assemble 
+	transform assem : asm!AssemblerObject
+	to hexfile : hex!HexFile {
+
+	hexfile.addressType = hex!AddressType#ExtendedLinear;
+	
+	var entry = new hex!Entry;
+	hexfile.entries.add(entry);
+	
+	var data = new Sequence(Integer);
+	var index = 0;
+	
+	for (call in assem.instructions) { 
+		
+		var parameterValues = new Map;//(asm!InstructionParameter, Integer);
+		var i = call.instruction;
+			
+		i.eClass.println();	
+		call.println();
+		i.eIsProxy().println();
+		i.name.println();
+			
+		/* Set default values */		
+		for (ip in i.parameters){
+			paramvalues.put(ip, ip.defaultValue);
+		}
+		for(icp in call.parameters){
+			paramvalues.put(icp.definition, icp.value);
+		}
+		
+		for(w in i.words){
+		
+			
+		}
+	}
+}

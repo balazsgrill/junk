@@ -1,0 +1,24 @@
+@Spec {
+	metamodel "object" {
+		nsUri: "http://modembed.hu/core/object"
+	}
+	metamodel "instructionset" {
+		nsUri: "http://modembed.hu/core/instructionset"
+	}
+}
+
+object {
+	
+	AssemblerObject{
+		name : "test.asm"
+		
+		instructions : InstructionCall{
+			instruction: Instruction "microchip.pic16.instructions.xmi#//@instructions.25"
+			parameters: InstructionCallParameter{
+				value : 6
+				definition : InstructionParameter "microchip.pic16.instructions.xmi#//@instructions.25/@parameters.0"
+			}
+		}
+	}
+	
+}

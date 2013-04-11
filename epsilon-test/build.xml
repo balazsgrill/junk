@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="main">
+	
+	<target name="main">
+	
+		<epsilon.emf.register file="hexfile.ecore"/>
+		<epsilon.emf.register file="modembed.ecore"/>
+			
+		<epsilon.emf.loadModel name="test.asm"
+			modelfile="test.asm.model"
+			metamodeluri="http://modembed.hu/"
+			read="true"
+			store="false"
+		/>
+			
+		<epsilon.emf.loadModel name="test.hex"
+				modelfile="test.asm.hex"
+				
+				metamodeluri="http://hexfile"
+				read="false"
+				store="true"
+		/>
+		<epsilon.etl src="compiler.assemble.etl">
+			<model ref="test.asm" as="asm"/>
+			<model ref="test.hex" as="hex"/>
+			
+		</epsilon.etl>
+		
+	</target>
+	
+</project>

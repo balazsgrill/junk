@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object:AssemblerObject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:object="http://modembed.hu/core/object"
+    name="test.asm">
+  <instructions instruction="microchip.pic16.instructions.xmi#//@instructions.25">
+    <parameters value="6" definition="microchip.pic16.instructions.xmi#//@instructions.25/@parameters.0"/>
+  </instructions>
+</object:AssemblerObject>
